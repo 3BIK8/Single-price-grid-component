@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla&display=swap");
+
+:root {
+	--Bright-Yellow: hsl(71, 73%, 54%);
+	--Cyan: hsl(179, 62%, 43%);
+	--Light-Gray: hsl(204, 43%, 93%);
+	--Grayish-Blue: hsl(218, 22%, 67%);
+}
+* {
+	font-family: "Karla", sans-serif;
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-size: 19px;
+}
+h1,
+h2,
+h3 {
+	font-weight: 700;
+	font-size: 1.6rem;
+	color: var(--Light-Gray);
+	margin: 1rem 0;
+}
+h1 {
+	color: var(--Cyan);
+	font-size: 1.8rem;
+}
+h2 {
+	color: var(--Bright-Yellow);
+}
+
+section {
+	padding: 1.5rem;
+}
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	line-height: 1.5;
+}
+.main p {
+	color: var(--Grayish-Blue);
+}
+.main {
+	height: max-content;
+}
+
+.sub {
+	background-color: var(--Cyan);
+	color: var(--Light-Gray);
+	display: flex;
+	flex-direction: column;
+	height: max-content;
+}
+.sub div {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+}
+.sub .month {
+	color: hsl(218, 22%, 80%);
+	font-size: 1.2rem;
+	padding: 0.5rem;
+}
+
+.sub .price {
+	font-weight: 700;
+	font-size: 2rem;
+}
+
+.sub button {
+	font-size: 1.5rem;
+	padding: 0.5rem;
+	color: white;
+	border-radius: 0.3rem;
+	box-shadow: 0 6px 6px hsl(0deg 0% 0% / 0.2);
+	cursor: pointer;
+	height: 4rem;
+	margin: 2rem 0;
+	border: none;
+	background-color: var(--Bright-Yellow);
+}
+p {
+	line-height: 1.7;
+	color: var(--Light-Gray);
+}
+
+.why {
+	background-color: hsl(179, 47%, 52%);
+	line-height: 1.5;
+	height: max-content;
+}
+
+@media only screen and (min-width: 585px) {
+	section {
+		padding: 2.5rem;
+	}
+	.parts {
+		display: flex;
+	}
+	.sub,
+	.why {
+		width: 50%;
+		height: 400px;
+	}
+}
+
+footer p {
+	color: black;
+}
+footer a {
+	color: var(--Bright-Yellow);
+}
+
+footer {
+	display: flex;
+	justify-content: center;
+	margin: 1rem;
+}
